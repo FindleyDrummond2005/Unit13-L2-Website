@@ -6,20 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="..\css\base.css" rel="stylesheet">
     <title>ICUPhones - Home</title>
-    <!-- <style> * {border: 1px solid rgb(255, 0, 234)} </style> -->
+    <style> * {border: 1px solid rgb(255, 0, 234)} </style>
 </head>
 <body>
     <div class="banner"> 
            <img class="logo" src="..\assets\Images\ICUPhones_Logo.jpg" alt="ICUphones logo"> 
 
         <div class="topbar">
-            <button class="nav_option"> <a class="nav_link" href="..\html\store.html">Store</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\live_support.html">Live support</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\about_us.html">About us</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\reviews.html">Reviews</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\repair_center.html">Repair center</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\contract.html">Contract</a> </button>
-            <button class="nav_option"> <a class="nav_link" href="..\html\checkout.html"> <img src="..\assets\Icons\shopping_cart_icon.png" alt="checkout"> </a> </button>
+            <div class="desktop_nav">
+                <button class="nav_option"> <a class="nav_link" href="..\html\store.html">Store</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\live_support.html">Live support</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\about_us.html">About us</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\reviews.html">Reviews</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\repair_center.html">Repair center</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\contract.html">Contract</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\checkout.html"> <img src="..\assets\Icons\shopping_cart_icon.png" alt="checkout"> </a> </button>
+            </div>
+
+            <div class="mobile_nav"> <button class="hamburger" onclick="hamburger_toggle()"><img src="..\assets\icons\hamburger_menu_icon.png" id="menu_toggle_img" alt="hamburger menu"></button>
+                <ul class="mobile_dropdown_menu">
+                    <li><a class="menu_item" href="..\html\store.html">Store</a></li> <br>
+                    <li><a class="menu_item" href="..\html\live_support.html">Live support</a></li> <br>
+                    <li><a class="menu_item" href="..\html\about_us.html">About us</a></li> <br>
+                    <li><a class="menu_item" href="..\html\reviews.html">Reviews</a></li> <br>
+                    <li><a class="menu_item" href="..\html\repair_center.html">Repair center</a></li> <br>
+                    <li><a class="menu_item" href="..\html\contract.html">Contract</a></li> <br>
+                </ul>
+            </div>
         </div> 
     </div>
     <script src="..\javascript\base.js"></script>
