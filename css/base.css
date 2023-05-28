@@ -80,6 +80,7 @@ html
     display: none;
 }
 
+
 @media screen and (max-width: 600px) /* Checks for mobile view by checking how many pixels the viewport is, and when it reaches the pixel criteria it executes the code inside the {} */
 {
     *
@@ -159,5 +160,6 @@ html
     
     div.mobile_nav { display: block; }
     div.desktop_nav { display: none; }
+    a.shopping_cart_icon { display: block;}
     img.shopping_cart_icon { display: block;}
 }
