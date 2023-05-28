@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="..\css\base.css" rel="stylesheet">
     <title>ICUPhones - Home</title>
-    <style> * {border: 1px solid rgb(255, 0, 234)} </style>
+    <!-- <style> * {border: 1px solid rgb(255, 0, 234)} </style> -->
 </head>
 <body>
-    <div class="banner"> 
+    <div class="banner"> <!-- The logo and the navigation bar in one container to keep things from interlapping and making it easier to make banner changes in future -->
            <img class="logo" src="..\assets\Images\ICUPhones_Logo.jpg" alt="ICUphones logo"> 
 
-        <div class="topbar">
+        <div class="topbar"> <!-- The nav bar -->
             <div class="desktop_nav">
                 <button class="nav_option"> <a class="nav_link" href="..\html\store.html">Store</a> </button>
                 <button class="nav_option"> <a class="nav_link" href="..\html\live_support.html">Live support</a> </button>
@@ -23,6 +23,7 @@
                 <button class="nav_option"> <a class="nav_link" href="..\html\checkout.html"> <img src="..\assets\Icons\shopping_cart_icon.png" alt="checkout"> </a> </button>
             </div>
 
+            <a href="..\html\store.html"> <img class="shopping_cart_icon" src="..\assets\Icons\shopping_cart_icon.png" alt="shopping_cart_icon"></a>
             <div class="mobile_nav"> <button class="hamburger" onclick="hamburger_toggle()"><img src="..\assets\icons\hamburger_menu_icon.png" id="menu_toggle_img" alt="hamburger menu"></button>
                 <ul class="mobile_dropdown_menu">
                     <li><a class="menu_item" href="..\html\store.html">Store</a></li> <br>
