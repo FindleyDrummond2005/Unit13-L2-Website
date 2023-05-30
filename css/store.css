@@ -1,0 +1,32 @@
+@media screen and (max-width: 600px)
+{
+    .product_img_container
+    {
+        display:inline-flex;
+        width: 40%;
+        background-color: white;
+        justify-self: sp;
+    }
+
+    .product_img
+    {
+        width:100%;
+    }
+
+    .product_name
+    {
+        display: inline-flex;
+        width:40%;
+        text-align: center;
+        justify-content: center;
+        overflow-wrap: break-word;
+    }
+
+    .product_price
+    {
+        display:inline-flex;
+        width:40%;
+        justify-content: center;
+        overflow-wrap: break-word;
+    }
+}

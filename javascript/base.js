@@ -17,3 +17,4 @@ function hamburger_toggle() /* Toggles the hamburger menu in the mobile view */
         menu.classList.add("show_menu")
     }
 }
+    
