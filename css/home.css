@@ -3,7 +3,7 @@
 {
     color:white;
     background-color: black;
-    height: 6%;
+    height: 10%;
     width: 100%;
     position: absolute;
     bottom:0;
@@ -25,6 +25,11 @@
 .apple_link
 {
     padding-left:60px;
+}
+
+div.mobile_site
+{
+    display: none;
 }
 
 @media screen and (max-width: 600px) /* Checks for mobile view by checking how many pixels the viewport is, and when it reaches the pixel criteria it executes the code inside the {} */
@@ -75,5 +80,9 @@
     .bottom_bar
     {
         font-size: medium;
+        height: 6%;
     }
+
+div.mobile_site{display:block};
+div.desktop_site{display:none};
 }
