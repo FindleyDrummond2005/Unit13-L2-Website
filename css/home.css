@@ -62,17 +62,15 @@
         padding: 1%;
     }
 
-    .review_box
+    .review_box_desktop
     {
-        margin:5%;
-        width:8%;
-        height:70%;
-        border:1px solid black;
-        border-radius: 2%;
+        display: block;
         position: absolute;
-        top:10%;
-        left:-4%;
         background-color: rgb(255,247,161);
+        height:70%;
+        width: 8%;
+        transform:translateX(10px) translateY(10px);
+        border:1px solid black;
         overflow-wrap: normal;
         overflow:auto;
     }
@@ -111,7 +109,7 @@
         padding: 1%;
     }
 
-    .review_box
+    .review_box_mobile
     {
         margin:5%;
         width:89%;
@@ -131,16 +129,6 @@
         color:white;
         background-color: black;
         height: fit-content;
-        width: 100%;
-        position: absolute;
-        bottom:0;
-        text-align: center;
-    }
-    .bottom_bar
-    {
-        color:white;
-        background-color: black;
-        height: 6%;
         width: 100%;
         position: absolute;
         bottom:0;
