@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,16 @@
     <link href="..\css\store.css" rel="stylesheet">
     <title>ICUPhones - Store</title>
     <link rel="shortcut icon" href="..\assets\Images\ICUPhones_Logo.jpg" type="image/x-icon" />
-    <style> * {border: 1px solid rgb(255, 0, 234)} </style>
-</head>
-<body>
+    <!-- <style> * {border: 1px solid rgb(255, 0, 234)} </style> -->
+  </head>
+  <body>
     <div class="banner"> <!-- The logo and the navigation bar in one container to keep things from interlapping and making it easier to make banner changes in future -->
-        <img class="logo" src="..\assets\Images\ICUPhones_Logo.jpg" alt="ICUphones logo"> 
-        
-        <div class="topbar"> <!-- The nav bar -->
-            <div class="desktop_nav">
-                <button class="nav_option"> <a class="nav_link" href="..\html\index.html">Home</a> </button>
+      <img class="logo" src="..\assets\Images\ICUPhones_Logo.jpg" alt="ICUphones logo"> 
+      <div class="sorting_bar"></div> <!-- The yellow bar with sorting options -->
+      
+      <div class="topbar"> <!-- The nav bar -->
+        <div class="desktop_nav">
+          <button class="nav_option"> <a class="nav_link" href="..\html\index.html">Home</a> </button>
                 <button class="nav_option"> <a class="nav_link" href="..\html\live_support.html">Live support</a> </button>
                 <button class="nav_option"> <a class="nav_link" href="..\html\about_us.html">About us</a> </button>
                 <button class="nav_option"> <a class="nav_link" href="..\html\reviews.html">Reviews</a> </button>
@@ -39,9 +40,8 @@
         </div> 
     </div>
 
-    <div class="sorting_bar"></div>
     
-    <div class="product_table_mobile">
+    <div class="product_table_mobile"> <!-- The list of products itself for mobile, which includes an image, price and name of the product, all done using a table -->
     <table>
         <tr>
           <th class="product_img_container"><img class="product_img" src="..\assets\Images\SamsungGalaxyS22+5G_img.png"></th>
@@ -108,7 +108,7 @@
 
       </div>
 
-      <div class="product_table_desktop">
+      <div class="product_table_desktop"> <!-- The list of products itself for desktop -->
         <table>
             <tr>
               <th class="product_img_container"><img class="product_img" src="..\assets\Images\SamsungGalaxyS22+5G_img.png"></th>
@@ -153,24 +153,22 @@
             
           </table>
           <br>
+          <table>
+            <tr>
+              <th class="product_img_container"><img class="product_img" src="..\assets\Images\SamsungGalaxyS22+5G_img.png"></th>
+              <th class="product_img_container"><img class="product_img" src="..\assets\Images\SamsungGalaxyS22+5G_img.png"></th>
+              <th class="product_img_container"><img class="product_img" src="..\assets\Images\SamsungGalaxyS22+5G_img.png"></th>
+            </tr>
+            <tr>
+              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
+              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
+              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
+            </tr>
+            
+          </table>
     </div>
 
-    </div>
 
-    <table>
-        <tr>
-          <th class="product_img_container"><img class="product_img" src="..\assets\Images\GalaxyS22+5G_img.png"></th>
-          <th class="product_img_container"><img class="product_img" src="..\assets\Images\GalaxyS22+5G_img.png"></th>
-        </tr>
-        <tr>
-          <td class="product_name">Samsung Galaxy S22 5G</td>
-          <td class="product_name">Samsung Galaxy S22 5G</td>
-        </tr>
-        <tr>
-          <td class="product_price">£769</td>
-          <td class="product_price">Francisco Chang</td>
-        </tr>
-      </table>
 
     <script src="..\javascript\base.js"></script>
 </body>
