@@ -82,7 +82,7 @@ html
 
 .item_number
 {
-    position: absolute;
+    position: absolute; 
     font-size:80%;
     top: 36.2%;
 }
