@@ -80,6 +80,13 @@ html
     display: none;
 }
 
+.item_number
+{
+    position: absolute;
+    font-size:80%;
+    top: 36.2%;
+}
+
 
 
 @media screen and (max-width: 600px) /* Checks for mobile view by checking how many pixels the viewport is, and when it reaches the pixel criteria it executes the code inside the {} */
