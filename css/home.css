@@ -70,7 +70,7 @@
         display: block;
         position: absolute;
         background-color: rgb(255,247,161);
-        height:70%;
+        height:66vh;
         width: 8%;
         transform:translateX(10px) translateY(10px);
         border:1px solid black;
