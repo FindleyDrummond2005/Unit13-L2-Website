@@ -13,7 +13,12 @@
   <body>
     <div class="banner"> <!-- The logo and the navigation bar in one container to keep things from interlapping and making it easier to make banner changes in future -->
       <img class="logo" src="..\assets\Images\icuphones_logo.jpg" alt="ICUphones logo"> 
-      <div class="sorting_bar"></div> <!-- The yellow bar with sorting options -->
+      
+      <div class="sorting_bar"> <!-- The yellow bar with sorting options -->
+        <p> <input class="checkbox" type="checkbox" id="samsung_selector" onclick="samsung_select()"> Samsung</p> <br>
+        <p> <input class="checkbox" type="checkbox" id="iphone_selector" onclick="iphone_select()"> Iphone</p> <br>
+        <p> <input class="checkbox" type="checkbox" id="nokia_selector" onclick="nokia_select()"> Nokia</p>
+      </div>
       
       <div class="topbar"> <!-- The nav bar -->
         <div class="desktop_nav">
@@ -44,8 +49,8 @@
     <div class="product_table_mobile"> <!-- The list of products itself for mobile, which includes an image, price and name of the product, all done using a table -->
     <table>
         <tr>
-          <th class="product_img_container samsung_tag"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
-          <th class="product_img_container samsung_tag"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
+          <th class="product_img_container"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
+          <th class="product_img_container"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
         </tr>
         <tr>
           <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
@@ -111,14 +116,14 @@
       <div class="product_table_desktop"> <!-- The list of products itself for desktop -->
         <table>
             <tr>
-              <th class="product_img_container"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
-              <th class="product_img_container"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
-              <th class="product_img_container"><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
+              <th class="product_img_container" id="samsung_tag" style=""><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
+              <th class="product_img_container" id="samsung_tag" style=""><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
+              <th class="product_img_container" id="samsung_tag" style=""><img class="product_img" src="..\assets\Images\samsung_galaxy_s22+_5g_img.png"></th>
             </tr>
             <tr>
-              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
-              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
-              <td class="product_name">Samsung Galaxy S22 5G <br> £769 </td>
+              <td class="product_name" id="samsung_tag" style="">Samsung Galaxy S22 5G <br> £769 </td>
+              <td class="product_name" id="samsung_tag" style="">Samsung Galaxy S22 5G <br> £769 </td>
+              <td class="product_name" id="samsung_tag" style="">Samsung Galaxy S22 5G <br> £769 </td>
             </tr>
             
           </table>
@@ -171,5 +176,6 @@
 
 
     <script src="..\javascript\base.js"></script>
+    <script src="..\javascript\store.js"></script>
 </body>
 </html>
