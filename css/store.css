@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px)
 {
-    .sorting_bar
+    .deals_bar
     {
         display: block;
         position: absolute;
@@ -10,6 +10,14 @@
         transform:translateY(-5px);
         border:1px solid black;
         padding:20px;
+        overflow-y: auto;
+    }
+
+    .deal
+    {
+        color:red;
+        font-size: 2vw;
+        text-align: center;
     }
     
     table 
@@ -80,7 +88,7 @@
         border:1px solid black; 
     }
 
-    .sorting_bar{display:none};
+    .deals_bar{display:none};
     .product_table_mobile{display: table;}
     .product_table_desktop{display: none;}
 }
