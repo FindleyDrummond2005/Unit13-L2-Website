@@ -40,6 +40,27 @@
         </div> 
     </div>
 
+    <button class="login_button" onclick="login_function()"> Login </button>
+
+
+    <script>
+        function login_function() {
+          let text;
+          let email = prompt("Please enter your email:");
+          let password = prompt("Please enter your password:");
+          if (email.includes("@"))
+          {
+              alert(email + "\n" + password);
+          }
+          else
+          {
+            alert("Please input a valid email.")
+          }
+        }
+    </script>
+
+
+
     <script src="..\javascript\base.js"></script>
 </body>
 </html>
