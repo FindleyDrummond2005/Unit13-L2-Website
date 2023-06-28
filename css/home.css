@@ -11,12 +11,14 @@
     bottom:0;
     text-align: center;
     font-size: x-large;
+    overflow-y: auto;
 }
 
 .bottom_bar_web_links
 {
     color:darkslateblue;
     text-decoration: none;
+    overflow-y: auto;
 }
 
 .samsung_link

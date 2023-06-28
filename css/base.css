@@ -109,6 +109,7 @@ html
         top:0;
         height: 20vw;
         width:74.8%;
+        overflow-y: auto;
     }
 
     .hamburger /* The hamburger icon itself */
@@ -143,12 +144,14 @@ html
     {
         color:darkslateblue;
         text-decoration: none;
+        overflow-y: auto;
     }
 
     .mobile_nav
     {
         position: absolute;
         right:0;
+        overflow-y: auto;
     }
 
     .show_menu /* This gets added to the classlist for the dropdown menu which overrides the old code for the time it is present */
