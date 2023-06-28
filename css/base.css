@@ -1,0 +1,172 @@
+/* The base of the website which applies to all pages to make a more consistent look between pages and it allows me to make changes on every page at once */
+
+* /* Removes built in padding and margins which helps with control */
+{
+    margin:0;
+    padding:0;
+}
+
+html
+{
+    background-color: 	rgb(222,222,255);
+}
+
+.logo
+{
+    width: 10%;
+    z-index: 5;
+}
+
+.banner /* This and .topbar sets up the navigation bar for both mobile and desktop */
+{
+    width:100%;
+    z-index: 5;
+}
+
+.topbar
+{
+    display:flex;
+    position: absolute;
+    right:0;
+    top:0;
+    height: 8vw;
+    width:89.92%;
+    background-color: rgb(207,228,255);
+    border: 1px black solid;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5;
+}
+
+.desktop_nav /* This along with .nav_option and .nav_link makes the navigation bar for desktop specifically */
+{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_option
+{
+    background-color: rgb(252,148,50);
+    height:50%;
+    width:12%;
+    border: 1px black solid;
+    font-size: large;
+    cursor:pointer;
+}
+
+.nav_link
+{
+    text-decoration: none;
+    color:black;
+    display:block;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile_nav /* Disables the mobile navigation bar */
+{
+    display: none;
+}
+
+.shopping_cart_icon
+{
+    display: none;
+}
+
+.item_number
+{
+    position: absolute; 
+    font-size:80%;
+}
+
+
+
+@media screen and (max-width: 600px) /* Checks for mobile view by checking how many pixels the viewport is, and when it reaches the pixel criteria it executes the code inside the {} */
+{
+    *
+    {
+        margin:0;
+        padding:0;
+    }
+
+    .logo /* This and .topbar is different from the ones above due to the differing viewport sizes */
+    {
+        width: 25%;
+    }
+    
+    .topbar
+    {
+        display: flex;
+        position: absolute;
+        right:0;
+        top:0;
+        height: 20vw;
+        width:74.8%;
+    }
+
+    .hamburger /* The hamburger icon itself */
+    {
+        float:right;
+        background-color: transparent;
+        outline-color: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        height:50px;
+        position:relative;
+        bottom:3px;
+    }
+
+    .mobile_dropdown_menu /* Sets up the dropdown menu and moves it off screen for the slide in */
+    {
+        transform: translateY(-110%);
+        transition: transform 0.5s;
+        text-align: center;
+        width:40vw;
+        height:280px;
+        position: absolute;
+        right:0;
+        background-color:  rgb(207,228,255);
+        list-style-type: none;
+        padding-top:30px;
+        border:1px solid black;
+        z-index: 1;
+    }
+
+    .menu_item
+    {
+        color:darkslateblue;
+        text-decoration: none;
+    }
+
+    .mobile_nav
+    {
+        position: absolute;
+        right:0;
+    }
+
+    .show_menu /* This gets added to the classlist for the dropdown menu which overrides the old code for the time it is present */
+    {
+        transform: translateY(16vw); 
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 10;
+    }
+
+    .shopping_cart_icon
+    {
+        position: absolute;
+        left:0;
+        height:40px;
+    }
+    
+    div.mobile_nav { display: block; }
+    div.desktop_nav { display: none; }
+    a.shopping_cart_icon { display: block;}
+    img.shopping_cart_icon { display: block;}
+}

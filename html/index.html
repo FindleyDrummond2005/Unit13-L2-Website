@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\css\base.css" rel="stylesheet">
+    <link href="..\css\home.css" rel="stylesheet">
+    <title>ICUPhones - Home</title>
+    <link rel="shortcut icon" href="..\assets\Images\icuphones_logo.jpg" type="image/x-icon" />
+    <!-- <style> * {border: 1px solid rgb(255, 0, 234)} </style> -->
+</head>
+<body>
+<div class="wrapper">
+    
+    <div class="banner"> <!-- The logo and the navigation bar in one container to keep things from interlapping and making it easier to make banner changes in future -->
+        <img class="logo" src="..\assets\Images\icuphones_logo.jpg" alt="ICUphones logo"> 
+        <div class="review_box_desktop"> <p></p> </div>
+        
+        <div class="topbar"> <!-- The nav bar -->
+            <div class="desktop_nav">
+                <button class="nav_option"> <a class="nav_link" href="..\html\store.html">Store</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\live_support.html">Live support</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\about_us.html">About us</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\reviews.html">Reviews</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\repair_center.html">Repair center</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\contract.html">Contract</a> </button>
+                <button class="nav_option"> <a class="nav_link" href="..\html\checkout.html"> <div> <p class="item_number">0</p> <img src="..\assets\Icons\shopping_cart_icon.png" alt="checkout"> </div> </a> </button>
+            </div>
+            
+            <a class="shopping_cart_icon" href="..\html\checkout.html"> <img class="shopping_cart_icon" src="..\assets\Icons\shopping_cart_icon.png" alt="shopping_cart_icon"></a>
+            <div class="mobile_nav"> <button class="hamburger" onclick="hamburger_toggle()"><img src="..\assets\Icons\hamburger_menu_icon.png" id="menu_toggle_img" alt="hamburger menu"></button>
+                <ul class="mobile_dropdown_menu">
+                    <li><a class="menu_item" href="..\html\store.html">Store</a></li> <br>
+                    <li><a class="menu_item" href="..\html\live_support.html">Live support</a></li> <br>
+                    <li><a class="menu_item" href="..\html\about_us.html">About us</a></li> <br>
+                    <li><a class="menu_item" href="..\html\reviews.html">Reviews</a></li> <br>
+                    <li><a class="menu_item" href="..\html\repair_center.html">Repair center</a></li> <br>
+                    <li><a class="menu_item" href="..\html\contract.html">Contract</a></li> <br>
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+        <div class="statement_box">
+            <p>Here at ICUPhones we are dedicated to keeping your electronics alive. We believe that electronics are very important to preserve as they hold memories and can be a look into the past, so you know bringing your device here means they are in loving and careful hands. We also carry all other types of electronics so please feel free to browse the rest of the site!</p> 
+            <p class="hidden_on_mobile">We also believe in fair pricing for electronic devices, guaranteeing that we will beat the prices of any competitor. We source our phones directly from the phone companies themselves when they have too much stock which allows us to keep our prices incredibly low.</p>
+        </div>
+        <div class="call_to_action_box"> <p>WE WILL PRICE MATCH AND LOWER THE PRICE OF ANY STORE <br><br>If you bring us a reference we will go below the price of any store! <br> Also be sure to check out our deal of 20% off all Samsung Devices.</p> </div>
+        <div class="review_box_mobile">
+            <p></p> 
+        </div>
+
+    <div class="bottom_bar"> <p>This site is a fake site for a college project</p> <a class="bottom_bar_web_links samsung_link" href="https://www.samsung.com/uk/">Samsungs site</a> <a class="bottom_bar_web_links apple_link" href="https://www.apple.com/">Apples site</a> </div>
+    <script src="..\javascript\base.js"></script>
+
+</div>
+</body>
+</html>

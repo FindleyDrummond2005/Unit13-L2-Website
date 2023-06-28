@@ -1,0 +1,78 @@
+@media screen and (min-width: 600px)
+{
+    .sorting_bar
+    {
+        display: block;
+        position: absolute;
+        background-color: rgb(255,247,161);
+        height:100%;
+        width: 8%;
+        transform:translateY(-5px);
+        border:1px solid black;
+    }
+    
+    table 
+    {
+        border-spacing: 30px 0px;
+    }
+    .repair_img_container
+    {
+        position: relative;
+        width: 20%;
+        height:fit-content;
+        background-color: white;
+        border:1px solid black;
+        left: 16%;
+    }
+
+    .repair_img
+    {
+        width:25vw;
+        height: 20%;
+    }
+
+    .repair_name
+    {
+        position: relative;
+        text-align: center; 
+        overflow-wrap: break-word;
+        border:1px solid black; 
+        background-color: rgb(207,228,255);
+        left: 16%;
+    }
+
+    .repair_table_mobile{display: none;}
+    .repair_table_desktop{display: table;}
+}
+@media screen and (max-width: 600px)
+{
+    table 
+    {
+        border-spacing: 30px 0px;
+    }
+    .repair_img_container
+    {
+        width: 40%;
+        height:fit-content;
+        background-color: white;
+        border:1px solid black;
+    }
+
+    .repair_img
+    {
+        width:100%;
+        height: 20%;
+    }
+
+    .repair_name
+    {
+        width:40%;
+        text-align: center; 
+        overflow-wrap: break-word;
+        border:1px solid black; 
+    }
+
+    .sorting_bar{display:none};
+    .repair_table_mobile{display: table;}
+    .repair_table_desktop{display: none;}
+}

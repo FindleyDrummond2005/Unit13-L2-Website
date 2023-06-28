@@ -1,0 +1,154 @@
+@media screen and (min-width: 600px)
+{
+
+.bottom_bar
+{
+    color:white;
+    background-color: black;
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    text-align: center;
+    font-size: x-large;
+}
+
+.bottom_bar_web_links
+{
+    color:darkslateblue;
+    text-decoration: none;
+}
+
+.samsung_link
+{
+    padding-right:60px;
+}
+
+.apple_link
+{
+    padding-left:60px;
+}
+
+.statement_box
+    {
+        text-align: center;
+        margin:5%;
+        width: 85%;
+        height:45%;
+        border:1px solid black;
+        border-radius: 2%;
+        position: absolute;
+        top:8%;
+        right:-3%;
+        background-color: rgb(207,228,255);
+        overflow-wrap: normal;
+        overflow:auto;
+        padding: 1%;
+        font-size: xx-large;
+    }
+
+    .call_to_action_box
+    {
+        margin:5%;
+        text-align: center;
+        width:85%;
+        height:13.4%;
+        border:1px solid black;
+        border-radius: 2%;
+        position: absolute;
+        top:60%;
+        right:-3%;
+        background-color: rgb(184,245,237);
+        overflow-wrap: normal;
+        overflow:auto;
+        padding: 1%;
+        font-size: xx-large;
+    }
+
+    .review_box_desktop
+    {
+        display: block;
+        position: absolute;
+        background-color: rgb(255,247,161);
+        height:66vh;
+        width: 8%;
+        transform:translateX(10px) translateY(10px);
+        border:1px solid black;
+        overflow-wrap: normal;
+        overflow:auto;
+    }
+}
+
+@media screen and (max-width: 600px) /* Checks for mobile view by checking how many pixels the viewport is, and when it reaches the pixel criteria it executes the code inside the {} */
+{
+    .statement_box
+    {
+        text-align: center;
+        margin:5%;
+        width:89%;
+        height:45%;
+        border:1px solid black;
+        border-radius: 2%;
+        position: absolute;
+        top:12%;
+        background-color: rgb(207,228,255);
+        overflow-wrap: normal;
+        overflow:auto;
+        padding: 1%;
+        font-size: x-large; 
+    }
+
+    .call_to_action_box
+    {
+        margin:5%;
+        width:89%;
+        height:10%;
+        border:1px solid black;
+        border-radius: 2%;
+        position: absolute;
+        bottom:23%;
+        background-color: rgb(184,245,237);
+        overflow-wrap: normal;
+        overflow:auto;
+        padding: 1%;
+        text-align: center;
+        font-size:large;
+    }
+
+    .review_box_mobile
+    {
+        margin:5%;
+        width:89%;
+        height:15%;
+        border:1px solid black;
+        border-radius: 2%;
+        position: absolute;
+        bottom:5%;
+        background-color: rgb(255,247,161);
+        overflow-wrap: normal;
+        overflow:auto;
+        padding: 1%;
+    }
+    
+    .bottom_bar
+    {
+        color:white;
+        background-color: black;
+        height: fit-content;
+        width: 100%;
+        position: absolute;
+        bottom:0;
+        text-align: center;
+    }
+
+    .bottom_bar_web_links
+    {
+        color:darkslateblue;
+        text-decoration: none;
+    }
+
+    .hidden_on_mobile
+    {
+        display:none;
+    }
+}
